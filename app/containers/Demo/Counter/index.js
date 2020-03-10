@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
+import { getCounter } from '../selectors';
+
 
 function Counter({ value }) {
   return (
@@ -9,9 +11,9 @@ function Counter({ value }) {
   );
 }
 
-const mapStateToProps = immutableState => {
-  const state = immutableState.Counter.toJS();
-  return { value: state.counterValue };
+const mapStateToProps = state => {
+  const value = getCounter(state);
+  return { value };
 };
 
 export default connect(mapStateToProps)(Counter);
