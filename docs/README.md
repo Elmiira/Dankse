@@ -1,7 +1,12 @@
 
 ## Note about  Clickable Element
-First off and generally, in my opinion, this code just contains an extra and useless arbitration layer that causes:1- Complexity2- Difficult to understand
-specifically, form the __functional programming__ view, it's better we follow pure functionality, In __React.js__ programming literature, it means: decoupled into some different components each with specific task and features that yield into: 1- Modularity  2- Readability  
+First off and generally, in my opinion, this code just contains an extra and useless abstraction that causes:
+- Complexity
+- Difficult to understand
+
+specifically, form the __functional programming__ view, it's better we follow pure functionality principle, In __React.js__ programming literature, it means: `decoupled into some different components each with specific task and features` that yield into: 
+- Strong Modularity  
+- Readability  
 
 It has also some problems:
 - It passes some property to elements that will never match with them (For instance - sending disable for link element)
