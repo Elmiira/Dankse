@@ -4,14 +4,14 @@ First off and generally, in my opinion, this code just contains an extra and us
 - Complexity
 - Difficult to understand
 
-specifically, form the __functional programming__ view, it's better we follow pure functionality principle, In __React.js__ programming literature, it means: `decoupled into some different components each with specific task and features` that yield into: 
+specifically, form the __functional programming__ view, it's better we follow pure functionality principle, In __React.js__ programming literature, it means: `decoupling into some different components each of which with specific task and features` that yield into: 
 - Strong Modularity  
 - Readability  
 
 It has also some problems:
 - It passes some property to elements that will never match with them (For instance - sending disable for link element)
 - The way of passing id to elements are not standard
-- importing ../../../../util is not best practice
+- importing ../../../../util is not recommended as  a best practice
 
 
 ## Description
