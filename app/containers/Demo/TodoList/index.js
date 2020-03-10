@@ -12,8 +12,8 @@ const TodoList = ({ todos }) => (
 );
 
 const mapStateToProps = state => {
-  const { visibilityFilter } = state;
-  const todos = getTodosByVisibilityFilter(state, visibilityFilter);
+  const { visibilityFilters } = state;
+  const todos = getTodosByVisibilityFilter(state, visibilityFilters);
   return { todos };
 };
 

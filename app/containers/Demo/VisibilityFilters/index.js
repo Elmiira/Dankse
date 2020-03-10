@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { VISIBILITY_FILTERS } from '../constants';
 import { setFilter } from '../actions';
-import 'assets/style/VisibilityFilters.scss';
+import '../style.scss';
 
 const VisibilityFilters = ({ setFilter, activeFilter }) => (
   <Fragment>
@@ -12,7 +12,7 @@ const VisibilityFilters = ({ setFilter, activeFilter }) => (
         <span
           key={`visibility-filter-${currentFilter}`}
           className={
-            currentFilter === activeFilter ? 'filter filter--active ' : 'filter'
+            currentFilter === activeFilter ? 'filter filter-active ' : 'filter'
           }
           onClick={() => setFilter(currentFilter)}
         >
@@ -23,7 +23,7 @@ const VisibilityFilters = ({ setFilter, activeFilter }) => (
   </Fragment>
 );
 
-const mapStateToProps = state => ({ activeFilter: state.VisibilityFilters });
+const mapStateToProps = state => ({ activeFilter: state.visibilityFilters });
 
 export default connect(
   mapStateToProps,
