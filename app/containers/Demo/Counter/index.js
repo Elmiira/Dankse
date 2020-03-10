@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 
-function Counter({ value, onIncrement, onDecrement, onIncrementAsync }) {
+function Counter({ value }) {
   return (
     <Fragment>
       <div>Clicked: {value} times</div>
